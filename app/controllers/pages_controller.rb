@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  layout "stylish_portfolio"
+  layout "pages"
 
   def home
   end
