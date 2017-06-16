@@ -12,9 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require typed
-//= require bootstrap
 //= require_tree .
+//= require bootstrap
+//= require typed
 
 
 
