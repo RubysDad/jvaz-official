@@ -1,5 +1,5 @@
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
 //= require pages/pages
+//= require bootstrap
 
