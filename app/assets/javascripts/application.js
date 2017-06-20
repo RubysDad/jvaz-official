@@ -13,7 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= require typed
+//= require lib/typed
+//= require typed-implementation
 //= require bootstrap
 
 
