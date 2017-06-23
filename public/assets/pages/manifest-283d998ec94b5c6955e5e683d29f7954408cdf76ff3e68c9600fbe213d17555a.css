@@ -1,4 +1,351 @@
 /*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Global Styles */
+/* line 10, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Quattrocento', serif;
+}
+
+/* line 25, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+body {
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* line 29, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 35, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* line 42, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.text-vertical-center h2 {
+  color: #fff;
+}
+
+/* line 47, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.text-vertical-center h3 {
+  color: black;
+  margin: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 54, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.team-text h2 {
+  color: black;
+}
+
+/* Custom Button Styles */
+/* line 60, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 66, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 73, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: white;
+}
+
+/* line 79, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Custom Horizontal Rule */
+/* line 88, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+hr.small {
+  max-width: 100px;
+}
+
+/* Side Menu */
+/* line 94, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  margin-right: -250px;
+  overflow-y: auto;
+  background: #223;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 110, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 119, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+/* line 124, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999;
+}
+
+/* line 130, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 136, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* line 141, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  font-size: 18px;
+  line-height: 55px;
+}
+
+/* line 147, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav > .sidebar-brand a {
+  color: #999;
+}
+
+/* line 151, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+/* line 156, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+#menu-toggle {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* line 163, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 173, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* Header */
+/* line 179, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/fountain_hills_resort-396b144985691a0fc4cb981a4d75a2d51fa12d38186f665d9717220a89677018.JPG) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* About */
+/* line 193, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.about {
+  padding: 50px 0;
+}
+
+/* Services */
+/* line 199, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.services {
+  padding: 50px 0;
+}
+
+/* line 203, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.service-item {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Callout */
+/* line 210, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.callout {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(/assets/fountain_rainbow-a8c127eefbe5ea6f3f5157960062c05b7d02536b539a9b199f50e11f6248213a.JPG) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* Portfolio */
+/* line 224, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.portfolio {
+  padding: 50px 0;
+}
+
+/* line 228, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+/* line 232, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.img-portfolio {
+  margin: 0 auto;
+}
+
+/* line 236, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.img-portfolio:hover {
+  opacity: 0.8;
+}
+
+/* Call to Action */
+/* line 242, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.call-to-action {
+  padding: 50px 0;
+}
+
+/* line 246, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* Map */
+/* line 252, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.map {
+  height: 500px;
+}
+
+@media (max-width: 768px) {
+  /* line 257, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+  .map {
+    height: 75%;
+  }
+}
+/* Footer */
+/* line 264, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+footer {
+  padding: 100px 0;
+}
+
+/* line 268, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 291, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.profile-image {
+  width: 100px;
+}
+
+/* line 295, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
+.equal-housing-logo-image {
+  width: 50px;
+}
+/*
+
+
+
+
+*/
+
+/*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -9094,299 +9441,3 @@ button.close {
   overflow: visible;
   clip: auto;
 }
-/*!
- * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-/* Global Styles */
-/* line 10, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
-/* line 16, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: 'Quattrocento', serif;
-}
-
-/* line 25, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-body {
-  font-family: 'Quattrocento Sans', sans-serif;
-}
-
-/* line 29, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.text-vertical-center {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* line 35, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.text-vertical-center h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 4.5em;
-  font-weight: 700;
-}
-
-/* line 42, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.text-vertical-center h2 {
-  color: #fff;
-}
-
-/* line 47, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.text-vertical-center h3 {
-  color: black;
-  margin: 30px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-/* line 54, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.team-text h2 {
-  color: black;
-}
-
-/* Custom Button Styles */
-/* line 60, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.btn-dark {
-  border-radius: 0;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-/* line 66, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.btn-dark:hover,
-.btn-dark:focus,
-.btn-dark:active {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-/* line 73, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.btn-light {
-  border-radius: 0;
-  color: #333;
-  background-color: white;
-}
-
-/* line 79, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
-/* Custom Horizontal Rule */
-/* line 88, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-hr.small {
-  max-width: 100px;
-}
-
-/* Side Menu */
-/* line 94, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  margin-right: -250px;
-  overflow-y: auto;
-  background: #223;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-/* line 110, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* line 119, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
-}
-
-/* line 124, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #999;
-}
-
-/* line 130, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-/* line 136, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-/* line 141, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav > .sidebar-brand {
-  height: 55px;
-  font-size: 18px;
-  line-height: 55px;
-}
-
-/* line 147, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav > .sidebar-brand a {
-  color: #999;
-}
-
-/* line 151, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
-  background: none;
-}
-
-/* line 156, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-#menu-toggle {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  right: 0;
-}
-
-/* line 163, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-/* line 173, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.toggle {
-  margin: 5px 5px 0 0;
-}
-
-/* Header */
-/* line 179, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.header {
-  display: table;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url(/assets/fountain_hills_resort-396b144985691a0fc4cb981a4d75a2d51fa12d38186f665d9717220a89677018.JPG) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-/* About */
-/* line 193, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.about {
-  padding: 50px 0;
-}
-
-/* Services */
-/* line 199, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.services {
-  padding: 50px 0;
-}
-
-/* line 203, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.service-item {
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-/* Callout */
-/* line 210, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.callout {
-  display: table;
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  background: url(/assets/fountain_rainbow-a8c127eefbe5ea6f3f5157960062c05b7d02536b539a9b199f50e11f6248213a.JPG) no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-/* Portfolio */
-/* line 224, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.portfolio {
-  padding: 50px 0;
-}
-
-/* line 228, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.portfolio-item {
-  margin-bottom: 30px;
-}
-
-/* line 232, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.img-portfolio {
-  margin: 0 auto;
-}
-
-/* line 236, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.img-portfolio:hover {
-  opacity: 0.8;
-}
-
-/* Call to Action */
-/* line 242, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.call-to-action {
-  padding: 50px 0;
-}
-
-/* line 246, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.call-to-action .btn {
-  margin: 10px;
-}
-
-/* Map */
-/* line 252, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-.map {
-  height: 500px;
-}
-
-@media (max-width: 768px) {
-  /* line 257, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-  .map {
-    height: 75%;
-  }
-}
-/* Footer */
-/* line 264, /home/ubuntu/workspace/jvaz/app/assets/stylesheets/pages/pages.css.scss */
-footer {
-  padding: 100px 0;
-}
-/*
-
-
-
-
-*/
-
