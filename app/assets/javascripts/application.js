@@ -15,7 +15,7 @@
 //= require_tree .
 //= require lib/typed
 //= require typed-implementation
-//= require bootstrap
+
 
 
 
