@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+//= pages.coffee
 //= require lib/typed
 //= require typed-implementation
+//= require bootstrap
 
 
 
