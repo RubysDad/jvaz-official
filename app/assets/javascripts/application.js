@@ -18,6 +18,8 @@
 //= require stellar-implementation
 //= require lib/typed
 //= require typed-implementation
+//= require lib/iScroll
+//= require script
 //= require bootstrap
 
 

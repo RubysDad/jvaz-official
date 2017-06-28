@@ -297,54 +297,18 @@ footer {
     color: #fff;
 }
 
-.slide {        
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-
-    background-origin: content-box;
-    -moz-background-origin: content;
-    -webkit-background-origin: content-box;     
+.mobile body {
+  overflow: hidden;
 }
 
-@media 
-  /* ----------- iPhone 4 and 4S ----------- */
-  only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2),
-  /* ----------- iPhone 5 and 5S ----------- */
-  only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2),
-  /* ----------- iPhone 6 ----------- */
-  only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2),
-  /* ----------- iPhone 6+ ----------- */
-  only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3),
-  /* ----------- iPad mini ----------- */
-  only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1),
-  /* ----------- iPad 1 and 2 ----------- */
-  only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1),
-  /* ----------- iPad 3 and 4 ----------- */
-  only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .slide {
-        background-attachment: scroll;
-    }
+.mobile #wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.mobile #scroller {
+  height: 3000px;
 }
