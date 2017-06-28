@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-//= pages.coffee
+//= require pages
+//= require lib/stellar
+//= require stellar-implementation
 //= require lib/typed
 //= require typed-implementation
 //= require bootstrap
