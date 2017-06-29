@@ -14,12 +14,12 @@
 //= require jquery_ujs
 //= require_tree .
 //= require pages
+//= require iscroll
+//= require script
 //= require lib/stellar
 //= require stellar-implementation
 //= require lib/typed
 //= require typed-implementation
-//= require iscroll
-//= require script
 //= require bootstrap
 
 
