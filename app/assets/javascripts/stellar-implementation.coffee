@@ -1,1 +1,1 @@
-$.stellar()
+$('#scroller').stellar scrollProperty: 'transform'

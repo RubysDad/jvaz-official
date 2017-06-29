@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 //= require pages
-//= require iscroll
+//= require lib/iscroll
 //= require script
 //= require lib/stellar
 //= require stellar-implementation
