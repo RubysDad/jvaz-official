@@ -330,3 +330,43 @@ footer {
   .pixel:nth-child(8)  { left: 210px; }
   .pixel:nth-child(9)  { left: 240px; }
   .pixel:nth-child(10) { left: 270px; }
+  
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skinny_wrapper {
+  width: 80%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.wrapper_padding {
+  padding: 4rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.contact-us {
+    padding: 50px 0;
+    background-color: #5089D6;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bg.JPG') no-repeat;
+  background-size: cover;
+}

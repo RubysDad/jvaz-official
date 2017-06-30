@@ -1,0 +1,43 @@
+<div id="background">  
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1>Contact Us!</h1>
+        <div class="skinny_wrapper wrapper_padding">
+          <%= form_for @contact do |f| %>
+            <div class="form-group">
+              <%= f.label :name %><br>
+              <%= f.text_field :name, required: true, class: 'form-control', placeholder: "Name"  %>
+            </div>
+              
+              <br>
+              
+            <div class="form-group">  
+              <%= f.label :email %><br>
+              <%= f.email_field :email, required: true, class: 'form-control', placeholder: "Email"  %>
+            </div>  
+              <br>
+              
+            <div class="form-group">  
+              <%= f.label :message %><br>
+              <%= f.text_area :message, as: :text, class: 'form-control', placeholder: "Are you looking to sell, buy or rent?" %>
+            </div>
+            
+              <br>
+              
+              <div class="hidden">
+                <%= f.label :nickname %><br>
+                <%= f.email_field :nickname, hint: 'leave this field blank' %>
+              </div>
+              
+              <br>
+              
+            <div class="form-group">  
+              <%= f.submit 'Send Message', class: 'btn btn-success' %>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
