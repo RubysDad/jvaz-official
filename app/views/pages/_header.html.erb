@@ -1,9 +1,34 @@
 <header id="top" class="header">
-    <div class="text-vertical-center">
-        <h1>Julia Valentine </h1>
-        <h1>Arizona Properties</h1>
-        <br>
-        <a><%= image_tag "cbrb_logo.png", class: "profile-image" %></a>
-        <a><%= image_tag "equal-housing-op-logo.jpg", class: "equal-housing-logo-image" %></a>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <div class="header-content">
+              <div class="header-content-inner text-vertical-center-center">
+                <h1>Julia Valentine <br> AZ Properties</h1>
+                <br>
+                <a><%= image_tag "cbrb_logo.png", class: "profile-image" %></a>
+                <a><%= image_tag "equal-housing-op-logo.jpg", class: "equal-housing-logo-image" %></a>
+                <br>
+                <br>
+                <a href="#form" class="btn btn-outline btn-xl page-scroll">Email me!</a>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-5">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait white">
+                <div class="device">
+                  <div class="screen">
+                      <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                       <%= image_tag "iphone_6_plus_white_port.png", width: 250, class: "img-responsive" %>
+                  </div>
+                  <div class="button">
+                      <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 </header>
