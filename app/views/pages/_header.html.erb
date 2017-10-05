@@ -14,20 +14,28 @@
               </div>
             </div>
           </div>
-        <div class="col-sm-5">
-            <div class="device-container">
-              <div class="device-mockup iphone6_plus portrait white">
-                <div class="device">
-                  <div class="screen">
-                      <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                       <%= image_tag "iphone_6_plus_white_port.png", width: 250, class: "img-responsive" %>
-                  </div>
-                  <div class="button">
-                      <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                  </div>
+          <div class="col-sm-3">
+            <div class="wrapper-container">
+              <div class="device">
+                <div class="vid">
+                  <%= video_tag(
+                      'fountain.mov',
+                      autoplay: true,
+                      loop: true,
+                      muted: true,
+                      width: 200,
+  
+                    )
+                  %>
                 </div>
               </div>
+              <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
             </div>
+          </div>
+          <div class="col-sm-2">
+            
           </div>
         </div>
     </div>

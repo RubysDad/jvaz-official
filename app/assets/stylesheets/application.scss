@@ -902,10 +902,32 @@ body {
 
 
 
-header .device-container {
+header .wrapper-container {
     max-width: none;
     max-height: calc(0vh);
     margin: 100px auto 0;
+
+
 }
-  
+
+.device {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  postion: absolute;
+  background-image: url('iphone_6_plus_white_port.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding: 250px 0;
+}
+
+.vid {
+  padding-top: -500px;
+}
+
  
